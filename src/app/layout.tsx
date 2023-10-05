@@ -1,3 +1,4 @@
+import Breadcrumbs from "@root/components/Breadcrumbs";
 import "./globals.css";
 
 import type { Metadata } from "next";
@@ -21,9 +22,7 @@ export default async function RootLayout({
 			<body>
 				<div>
 					Root Layout
-					<Link aria-label="Go to homepage" href="/">
-						Home Page
-					</Link>
+					<Breadcrumbs/>
 				</div>
 				{children}
 			</body>
