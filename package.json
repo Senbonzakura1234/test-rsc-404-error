@@ -1,12 +1,13 @@
 {
-  "name": "test-path-eslint-config",
+  "name": "test-rsc-404-error",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+		"lint:fix": "eslint --ext .js,.cjs,.mjs,.jsx,.ts,.tsx . --fix"
   },
   "dependencies": {
     "react": "^18",
