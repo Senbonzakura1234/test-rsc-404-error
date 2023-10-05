@@ -2,7 +2,6 @@ import Breadcrumbs from "@root/components/Breadcrumbs";
 import "./globals.css";
 
 import type { Metadata } from "next";
-import Link from "next/link";
 import React from "react";
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -22,7 +21,6 @@ export default async function RootLayout({
 			<body>
 				<div>
 					Root Layout
-					<Breadcrumbs/>
 				</div>
 				{children}
 			</body>

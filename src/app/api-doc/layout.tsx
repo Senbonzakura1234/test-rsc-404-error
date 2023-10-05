@@ -1,3 +1,4 @@
+import PageBanner from "@root/components/PageBanner";
 import type { Metadata } from "next";
 import React from "react";
 
@@ -11,6 +12,7 @@ export default function ApiDocLayout({
 	return (
 		<div>
 			APIDoc Layout
+			<PageBanner />
 			{children}
 		</div>
 	);
