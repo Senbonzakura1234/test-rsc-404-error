@@ -1,6 +1,7 @@
 import "./globals.css";
 
 import type { Metadata } from "next";
+import Link from "next/link";
 import React from "react";
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -18,7 +19,12 @@ export default async function RootLayout({
 	return (
 		<html lang="en">
 			<body>
-				<div>Root Layout</div>
+				<div>
+					Root Layout
+					<Link aria-label="Go to homepage" href="/">
+						Home Page
+					</Link>
+				</div>
 				{children}
 			</body>
 		</html>
